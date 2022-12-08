@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length, i !== j; j++) {
+    if (array[i] + array[j] === target) {
+      return true;
+      }
+    }
+  }
+  return false;
 }
 
 /* 
@@ -8,7 +16,10 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
-*/
+//should take an array and target number as arguments and return true if any sum of two array elements equals target number.
+//should return true if the difference of an element in the array and the target number exist in the array.
+//else should return fals
+
 
 /*
   Add written explanation of your solution here
